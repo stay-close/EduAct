@@ -1,0 +1,28 @@
+/* Urbanist Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+
+/* All reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global / Common CSS */
+
+body,
+html {
+  font-family: "Urbanist", sans-serif;
+}
