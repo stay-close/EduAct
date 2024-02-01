@@ -12,6 +12,10 @@
 a {
   text-decoration: none;
   display: block;
+  text-transform: capitalize;
+  transition: var(--transition);
+  font-weight: 600;
+  padding: 15px 20px;
 }
 ul,
 ol {
@@ -19,10 +23,70 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+img {
+  width: 100%;
+  height: 100%;
+}
 /* Global / Common CSS */
-
+:root {
+  --btnBg: #f57005;
+  --colorWhite: #fff;
+  --transition: all 0.3s linear;
+}
 body,
 html {
   font-family: "Urbanist", sans-serif;
 }
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.dFlex {
+  display: flex;
+}
+.btn {
+  background: var(--btnBg);
+  color: var(--colorWhite);
+  padding: 7px 15px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+.btn:hover {
+  color: var(--btnBg);
+  background: var(--colorWhite);
+  border: 2px solid var(--btnBg);
+}
+/* Header Area CSS */
+
+.headerArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.headerItems {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding: 10px 0;
+}
+.mainMenu {
+  place-self: center;
+}
+.mainMenu ul li a {
+  font-size: 16px;
+  color: var(--colorWhite);
+}
+.userLogin {
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--colorWhite);
+}
+.userLogin ul {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider Area CSS */
+
+
