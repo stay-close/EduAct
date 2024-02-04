@@ -55,7 +55,7 @@ a.btn {
 }
 .btn:hover {
   color: var(--btnBg);
-  background: var(--colorWhite);
+  background: transparent;
   border: 2px solid var(--btnBg);
 }
 /* Header Area CSS */
@@ -174,13 +174,14 @@ a.btn {
 } */
 
 /* Service Area CSS */
-
-.serviceArea {
-  padding: 110px 0;
+.serviceAboutBg {
   background-image: url("../images/serviceImg/serviceBg.png");
-  background-size: 50%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.serviceArea {
+  padding: 110px 0;
 }
 .serviceContent {
   display: grid;
@@ -211,4 +212,12 @@ a.btn {
   padding: 10px 15px 10px 0px;
   color: var(--btnBg);
   display: inline;
+}
+
+/* About Area CSS */
+
+.aboutContent {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
