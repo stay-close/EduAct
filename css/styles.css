@@ -191,6 +191,7 @@ a.btn {
 .serviceCard {
   box-shadow: 4px 10px 10px rgba(221, 221, 221, 0.7);
   padding: 20px;
+  background-color: #fff;
 }
 .serviceCard .serviceIcon {
   width: 76px;
@@ -217,7 +218,123 @@ a.btn {
 /* About Area CSS */
 
 .aboutContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.imgContent,
+.imgOuter,
+.imgInner {
+  justify-content: center;
+  align-items: center;
+}
+.imgContent {
+  justify-content: flex-start;
+}
+.aboutImg {
+  position: relative;
+}
+.aboutImg span {
+  position: absolute;
+}
+.aboutImg span.vector1 {
+  left: 5%;
+  top: 5%;
+  z-index: -1;
+}
+.aboutImg span.vector2 {
+  right: 8%;
+  bottom: 10%;
+}
+.aboutImg span img {
+  width: 124px;
+  height: 124px;
+}
+.imgOuter {
+  width: 600px;
+  height: 600px;
+  background: #152b4a;
+  border-radius: 100%;
+  margin-left: 30px;
+}
+.imgInner {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(120deg, #6b4835 30%, #152b4a);
+  border-radius: 100%;
+}
+.contactNumber .contactIcon img {
+  width: 76px;
+  height: 76px;
+}
+.contactNumber {
+  position: absolute;
+  top: 77%;
+  left: 0;
+  padding: 15px 85px 15px 15px;
+  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.contactDetails .number {
+  font-size: 22px;
+  color: #4f5de4;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.content h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f5de4;
+  text-transform: capitalize;
+  padding: 20px 10px;
+}
+.content h3 {
+  color: #2a254d;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.content p {
+  line-height: 26px;
+  color: #697585;
+}
+.aboutCard {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.aboutCard::after {
+  position: absolute;
+  content: "";
+  width: 101%;
+  height: 100%;
+  background: var(--btnBg);
+  top: -2px;
+  left: -3px;
+  border-radius: 10px;
+  z-index: -1;
+}
+.card2 {
+  margin-bottom: 50px;
+}
+.aboutCard .cardIcon img {
+  width: 76px;
+  height: 76px;
+}
+
+.discoverMoreBtn a {
+  display: inline;
+  background: #4f5de4;
 }
