@@ -270,18 +270,22 @@ a.btn {
   line-height: 26px;
   color: #697585;
 }
+.aboutCards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .aboutCard {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 20px 15px;
   background-color: #fff;
-  border-radius: 10px;
-  margin: 30px 0;
+  border-radius: 10px 10px 0 0;
   border-top: 2px solid var(--btnBg);
   border-right: 2px solid var(--btnBg);
-  border-left: 2px solid linear-gradient(#f57005 80%, transparent);
+  border-left: 2px solid var(--btnBg);
 }
 .card2 {
   margin-bottom: 50px;
